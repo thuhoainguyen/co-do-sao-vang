@@ -28,7 +28,7 @@ print(f"Name: {var_dict['name']}, age: {var_dict['age']}, is student: {var_dict[
 # Ex.1: Write a program that asks the user to enter a number and prints out whether it is even or odd. 
 # (Assume that the user can only enter integers)
 
-num = int(input("Enter a number:"))
+num = int(input("Enter a number: "))
 if num % 2 == 0:
     print("Even")
 else:
