@@ -57,8 +57,9 @@ print("-----------------------------------------------")
 
 print("Ex2: ")
 
-light = input("Enter a traffic signal (green, yellow, red): ")
-light = light.lower()
+# light = input("Enter a traffic signal (green, yellow, red): ")
+# light = light.lower()
+light = "green"
 if light == "green":
     print("yellow")
 elif light == "yellow":
@@ -68,9 +69,41 @@ elif light == "red":
 else:
     print("invalid input")
 
+print("------------------------------------------------------")
 
+# Loop: for loop and while loop
+# While loop:
+print("Lesson 4: Loops")
+# Syntax:
+# while <condition>:
+#   <code>
+print("Ex1: While loop with count")
+count = 0
+while count < 5:
+  print(count)
+  count = count + 1
 
+# Spot the bug in the following code
+# Then fix the bug
+print("Ex2: Break the loop")
+name = 'Thu'
+while name == 'Thu':
+    print('Hello Thu')
+    break
 
+name = 'Thu'
+while name == 'Thu':
+    print('Hello Thu')
+    name = "Tu"
 
+# Write a program that ask the user to type their name.
+# If the user's name is not "Tu", the program will keep asking the user to type their name.
+# When the user types "Tu", the program will print out "Found Tu" and stops.
+
+name = input("Enter your name: ")
+while name != "Tu":
+    name = input("Enter your name: ")
+else:
+    print("Found Tu !")
 
 
