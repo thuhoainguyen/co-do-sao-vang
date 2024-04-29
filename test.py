@@ -147,8 +147,16 @@ for word in words:
 
 
 # Ex.1: Count how many times 'e' appears in the following string 'Thu likes lemon'
+stmt = 'Thu likes lemon'
+i = 0
+for a in stmt:
+    if a == 'e':
+        i = i + 1
+print(i)
+    
 
 # Ex.2: Count how many times 0 and 1 appear in the following list [0, 1, 0, 1, 1, 0, 0, 1, 0]
+
 
 # Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
 
