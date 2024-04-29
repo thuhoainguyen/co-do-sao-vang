@@ -126,19 +126,22 @@ print("-----------------------------------------------------------------")
 # for i in range(0, len(fruits) , 2):
 #   print(f'Thu likes {fruits[i]}')
 
+# stmt = "Thu likes lemon"
+# word = ''
+# words = []
+# for a in stmt:
+#     if a != ' ':
+#         word = word + a
+#     else:
+#         words.append(word)
+#         word = ''
+# words.append(word)
+# print(words)
+
 stmt = "Thu likes lemon"
-word = ''
-words = []
-for a in stmt:
-    if a != ' ':
-        word = word + a
-    else:
-        words.append(word)
-        word = ''
-words.append(word)
-print(words)
-
-
+words = stmt.split(' ')
+for word in words:
+    print(word)
         
 
 
