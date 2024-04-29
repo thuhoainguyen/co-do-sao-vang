@@ -51,9 +51,14 @@ print("-----------------------------------------------")
 # For example, if the user enters 'red', the program should print out 'green'.
 # If input is not valid, the program should print out 'invalid input'.
 
+# Ex.3: Extension to Ex.2 but to make it more challenging, the program should 
+# assist the user by allowing case insensitive input.
+# For example, if the user enters 'RED' or 'Red', the program should accept it.
+
 print("Ex2: ")
 
 light = input("Enter a traffic signal (green, yellow, red): ")
+light = light.lower()
 if light == "green":
     print("yellow")
 elif light == "yellow":
@@ -62,7 +67,8 @@ elif light == "red":
     print("green")
 else:
     print("invalid input")
-    
+
+
 
 
 
