@@ -100,10 +100,72 @@ while name == 'Thu':
 # If the user's name is not "Tu", the program will keep asking the user to type their name.
 # When the user types "Tu", the program will print out "Found Tu" and stops.
 
-name = input("Enter your name: ")
-while name != "Tu":
-    name = input("Enter your name: ")
-else:
-    print("Found Tu !")
+# name = input("Enter your name: ")
+# while name != "Tu":
+#     name = input("Enter your name: ")
+# else:
+#     print("Found Tu !")
+
+print("-----------------------------------------------------------------")
+
+# For loop:
+# Syntax:
+# for <variable> in <iterable>:
+#  <code>
+
+# for i in range(5):
+#   print(i)
+
+# for i in range(5, 10):
+#   print(i)
+
+# for i in range (5, 10, 2):
+#   print(i)
+
+# fruits = ['apple', 'banana', 'lemon', 'pineapple', 'opa']
+# for i in range(0, len(fruits) , 2):
+#   print(f'Thu likes {fruits[i]}')
+
+stmt = "Thu likes lemon"
+word = ''
+words = []
+for a in stmt:
+    if a != ' ':
+        word = word + a
+    else:
+        words.append(word)
+        word = ''
+words.append(word)
+print(words)
+
+
+        
+
+
+
+# Ex.1: Count how many times 'e' appears in the following string 'Thu likes lemon'
+
+# Ex.2: Count how many times 0 and 1 appear in the following list [0, 1, 0, 1, 1, 0, 0, 1, 0]
+
+# Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
+
+# Ex.4: Write a program that asks the user to enter a number and prints out the sum of all even numbers from 0 to the entered number
+
+# Ex.5: # Write a program that asks the user to enter a number until the user enters 0. The program then calculates:
+# - The total number
+# - The total number of positive numbers
+# - The total number of negative numbers
+# - The sum of all numbers
+# - The average of all numbers
+
+# Ex.6: Write a program that asks the user to enter a number and prints out whether it is a prime number or not. (Assume that the user can enter any number)
+
+# Ex.7: Write a program that asks the user to enter a number and check if the number is a square number or not. (Assume that the user can enter any number)
+
+# Ex.8: Write a program that asks the user to enter a number and prints out the factorial of that number. (Assume that the user can enter any integers)
+# Note that factorial of negative numbers exists but is not valid for this exercise.
+# But if you are good, try to do it.
+
+# Ex.9: Write a program that asks the user to enter a number and prints out the Fibonacci sequence up to that number. (Assume that the user can enter any integers)
 
 
