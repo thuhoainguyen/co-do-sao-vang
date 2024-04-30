@@ -137,26 +137,43 @@ print("-----------------------------------------------------------------")
 #         word = ''
 # words.append(word)
 # print(words)
+# dna = "cgagagacgatcgatgc"  # sort out "tcg"
+# print(dna.find("tcg"))
+# print(dna[0, 10 ])
 
-stmt = "Thu likes lemon"
-words = stmt.split(' ')
-for word in words:
-    print(word)
+
+
+# output: ["cga", "atgc"]
+# stmt = "Thu likes lemon"
+# words = stmt.split(' ')
+# for word in words:
+#     print(word)
         
 
 
 
 # Ex.1: Count how many times 'e' appears in the following string 'Thu likes lemon'
-stmt = 'Thu likes lemon'
-i = 0
-for a in stmt:
-    if a == 'e':
-        i = i + 1
-print(i)
-    
+# stmt = 'Thu likes lemon'
+# i = 0
+# for a in stmt:
+#     if a == 'e':
+#         i = i + 1
+# print(i)
+print("-----------------------------------------------------")
 
 # Ex.2: Count how many times 0 and 1 appear in the following list [0, 1, 0, 1, 1, 0, 0, 1, 0]
-
+print("Lesson 4: Loops")
+print("Ex2")
+binary_list = [0, 1, 0, 1, 1, 0, 0, 1, 0]
+i = 0
+j = 0
+for a in binary_list:
+    if a == "0":
+        i = i + 1
+    else:
+        j = j + 1
+print(f"0 appears {i} times")
+print(f"1 appears {j} times")
 
 # Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
 
