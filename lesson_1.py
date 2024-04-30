@@ -205,10 +205,30 @@ print_dash()
 # - The sum of all numbers
 # - The average of all numbers
 print("Ex5: Calculate")
-num = int(input("Enter a number: "))
-while number != 0:
-    num = int(input("Enter a number: "))
+num = None
+tot_num = 0
+pos_num = 0
+neg_num = 0
+sum = 0
+avg = 0
 
+while num != 0:
+    num = int(input("Enter a number: "))
+    tot_num = tot_num + 1
+    if num > 0:
+        pos_num = pos_num + 1
+    if num < 0:
+        neg_num = neg_num + 1
+    sum = sum + num
+
+avg = sum/tot_num
+
+print(f"Total numbers: {tot_num}")
+print(f"Total positive numbers: {pos_num}")
+print(f"Total negative numbers: {neg_num}")
+print(f"Total sum of numbers: {sum}")
+print(f"Average of numbers: {avg}")
+print_dash()
 
 # Ex.6: Write a program that asks the user to enter a number and prints out whether it is a prime number or not. (Assume that the user can enter any number)
 
