@@ -1,3 +1,5 @@
+from utils_common import *
+
 # Lesson_1: Variables and String Format
 print("Lesson 1: ")
 print("Welcome to Python class")
@@ -9,7 +11,7 @@ print("Sum of", num_1, "and", num_2, "is", num_1 + num_2)
 sum = num_1 + num_2
 print(f"The sum of {num_1} and {num_2} is {sum}")
 
-print("-----------------------------------------------")
+print_dash()
 
 # Lesson_2: Data types
 print("Lesson 2: Data types")
@@ -27,7 +29,7 @@ print(f"Size of the list: {len(var_list)}")
 var_dict = {"name": "AnhTu", "age": 27, "is_student": False}
 print(f"Name: {var_dict['name']}, age: {var_dict['age']}, is student: {var_dict['is_student']}")
 
-print("-----------------------------------------------")
+print_dash()
 
 # Lesson_3: Conditional Statements 
 print("Lesson 3: Conditional Statements")
@@ -44,7 +46,7 @@ if num % 2 == 0:
 else:
     print("Odd")
 
-print("-----------------------------------------------")
+print_dash()
 
 # Ex.2: Write a program that simulates a traffic light sequence based on a given signal.
 # The valid inputs are 'red', 'yellow', and 'green'. The program should print out the next signal.
@@ -69,7 +71,7 @@ elif light == "red":
 else:
     print("invalid input")
 
-print("------------------------------------------------------")
+print_dash()
 
 # Loop: for loop and while loop
 # While loop:
@@ -106,7 +108,7 @@ while name == 'Thu':
 # else:
 #     print("Found Tu !")
 
-print("-----------------------------------------------------------------")
+# print("-----------------------------------------------------------------")
 
 # For loop:
 # Syntax:
@@ -159,7 +161,7 @@ print("-----------------------------------------------------------------")
 #     if a == 'e':
 #         i = i + 1
 # print(i)
-print("-----------------------------------------------------")
+print_dash()
 
 # Ex.2: Count how many times 0 and 1 appear in the following list [0, 1, 0, 1, 1, 0, 0, 1, 0]
 print("Lesson 4: Loops")
@@ -174,6 +176,7 @@ for num in binary_list:
         counter_1 = counter_1 + 1
 print(f"0 appears {counter_0} times")
 print(f"1 appears {counter_1} times")
+print_dash()
 
 # Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
 print("Ex3: Loop Sum")
@@ -185,7 +188,19 @@ for i in range(0, number):
     i = i + 1
 sum = sum + number
 print("Sum of all numbers from 0 is: ", sum)
+print_dash()
+
 # Ex.4: Write a program that asks the user to enter a number and prints out the sum of all even numbers from 0 to the entered number
+
+print("Ex4: Loop Sum Even")
+number = int(input("Enter a number: "))
+i = 0
+sum = 0
+for i in range(0, number):
+    sum = sum + i
+    i = i + 1
+sum = sum + number
+print("Sum of all numbers from 0 is: ", sum)
 
 # Ex.5: # Write a program that asks the user to enter a number until the user enters 0. The program then calculates:
 # - The total number
