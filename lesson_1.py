@@ -182,10 +182,8 @@ print_dash()
 print("Ex3: Loop Sum")
 number = int(input("Enter a number: "))
 sum = 0
-for i in range(0, number):
+for i in range(0, number + 1):
     sum = sum + i
-    i = i + 1
-sum = sum + number
 print(f"Sum of all numbers from 0 is: {sum}")
 print_dash()
 
@@ -194,13 +192,9 @@ print_dash()
 print("Ex4: Loop Sum Even")
 number = int(input("Enter a number: "))
 sum = 0
-for i in range(0, number):
+for i in range(0, number + 1):
     if i % 2 == 0:
         sum = sum + i
-        i = i + 1
-
-if number % 2 == 0:
-    sum = sum + number
 print(f"Sum of all numbers from 0 is: {sum}")
 print_dash()
 
@@ -210,6 +204,11 @@ print_dash()
 # - The total number of negative numbers
 # - The sum of all numbers
 # - The average of all numbers
+print("Ex5: Calculate")
+num = int(input("Enter a number: "))
+while number != 0:
+    num = int(input("Enter a number: "))
+
 
 # Ex.6: Write a program that asks the user to enter a number and prints out whether it is a prime number or not. (Assume that the user can enter any number)
 
