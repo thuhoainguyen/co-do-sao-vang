@@ -164,19 +164,25 @@ print("-----------------------------------------------------")
 # Ex.2: Count how many times 0 and 1 appear in the following list [0, 1, 0, 1, 1, 0, 0, 1, 0]
 print("Lesson 4: Loops")
 print("Ex2")
-binary_list = [0, 1, 0, 1, 1, 0, 0, 1, 0]
-i = 0
-j = 0
-for a in binary_list:
-    if a == "0":
-        i = i + 1
-    else:
-        j = j + 1
-print(f"0 appears {i} times")
-print(f"1 appears {j} times")
+binary_list = [0, 1, 0, 1, 1, 0, 0, 1, 0, 2]
+counter_0 = 0
+counter_1 = 0
+for num in binary_list:
+    if num == 0:
+        counter_0 = counter_0 + 1
+    if num == 1:
+        counter_1 = counter_1 + 1
+print(f"0 appears {counter_0} times")
+print(f"1 appears {counter_1} times")
 
 # Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
-
+# print("Ex3: Loop Sum")
+# number = int(input("Enter a number: "))
+# i = 0
+# sum = 0
+# for i >=0 and i <= number:
+#     sum = sum + i
+#     i = i + 1
 # Ex.4: Write a program that asks the user to enter a number and prints out the sum of all even numbers from 0 to the entered number
 
 # Ex.5: # Write a program that asks the user to enter a number until the user enters 0. The program then calculates:
