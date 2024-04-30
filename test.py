@@ -176,13 +176,15 @@ print(f"0 appears {counter_0} times")
 print(f"1 appears {counter_1} times")
 
 # Ex.3: # Write a program that asks the user to enter a number and prints out the sum of all numbers from 0 to the entered number
-# print("Ex3: Loop Sum")
-# number = int(input("Enter a number: "))
-# i = 0
-# sum = 0
-# for i >=0 and i <= number:
-#     sum = sum + i
-#     i = i + 1
+print("Ex3: Loop Sum")
+number = int(input("Enter a number: "))
+i = 0
+sum = 0
+for i in range(0, number):
+    sum = sum + i
+    i = i + 1
+sum = sum + number
+print("Sum of all numbers from 0 is: ", sum)
 # Ex.4: Write a program that asks the user to enter a number and prints out the sum of all even numbers from 0 to the entered number
 
 # Ex.5: # Write a program that asks the user to enter a number until the user enters 0. The program then calculates:
