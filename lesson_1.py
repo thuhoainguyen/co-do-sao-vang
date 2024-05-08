@@ -232,6 +232,9 @@ print_dash()
 
 # Ex.6: Write a program that asks the user to enter a number and prints out whether it is a prime number or not. (Assume that the user can enter any number)
 
+
+
+
 # Ex.7: Write a program that asks the user to enter a number and check if the number is a square number or not. (Assume that the user can enter any number)
 
 # Ex.8: Write a program that asks the user to enter a number and prints out the factorial of that number. (Assume that the user can enter any integers)
