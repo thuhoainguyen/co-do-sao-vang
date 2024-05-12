@@ -52,7 +52,7 @@ class Post:
 # ------------------------------------------
 user = Account("Thu", 21, "F")
 friend_1 = Account("Tung", 22, "M")
-friend_2 = Account("Tu", 22, "M")
+friend_2 = Account("Tu", 27, "M")
 friend_3 = Account("Tam", 20, "F")
 
 user.add_friend(friend_1)
